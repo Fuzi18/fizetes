@@ -8,7 +8,207 @@ let ellenorzoKod=/[0-9]{3,3}/;
 let bankkartyaraIrtNev=/[a-zA-Z ]/;
 
 document.getElementById("gomb")!.addEventListener("click",()=>{
-    let abankartya=(document.getElementById("kartyaszam")as HTMLInputElement).value;
-    console.log(bankkartyaSzam.test(abankartya));
+    let abankkartya=(document.getElementById("kartyaszam") as HTMLInputElement).value;
+    console.log(bankkartyaSzam.test(abankkartya));
+    if(bankkartyaSzam.test(abankkartya)==false){
+        let x = document.getElementById("isvalid"); 
+        if (x){
+            let cucc=document.getElementById("kartyaszam");
+            if(cucc){
+                cucc.style.borderColor="RED";
+            }
+            x.style.color="RED";
+            x.textContent = "Nem jól töltötte ki";
+        }
+    }
+    else{
+        let x = document.getElementById("isvalid"); 
+        if (x){
+            let cucc=document.getElementById("teljesnev");
+            if(cucc){
+                cucc.style.borderColor="BLACK";
+            }
+            x.style.color="RED";
+            x.textContent = null;
+        }
+    }
+    
+    
+    let teljesnev=(document.getElementById("teljesnev") as HTMLInputElement).value;
+    console.log(nev.test(teljesnev));
+    if(nev.test(teljesnev)==false){
+        let x = document.getElementById("isvalid"); 
+        if (x){
+            let cucc=document.getElementById("teljesnev");
+            if(cucc){
+                cucc.style.borderColor="RED";
+            }
+            x.style.color="RED";
+            x.textContent = "Nem jól töltötte ki";
+        }
+    }
+    else{
+        let x = document.getElementById("isvalid"); 
+        if (x){
+            let cucc=document.getElementById("teljesnev");
+            if(cucc){
+                cucc.style.borderColor="BLACK";
+            }
+            x.style.color="RED";
+            x.textContent = null;
+        }
+    }
 
+    let country=(document.getElementById("orszag") as HTMLInputElement).value;
+    console.log(orszag.test(country));
+    if(orszag.test(country)==false){
+        let x = document.getElementById("isvalid"); 
+        if (x){
+            let cucc=document.getElementById("orszag");
+            if(cucc){
+                cucc.style.borderColor="RED";
+            }
+            x.style.color="RED";
+            x.textContent = "Nem jól töltötte ki";
+        }
+    }
+    else{
+        let x = document.getElementById("isvalid"); 
+        if (x){
+            let cucc=document.getElementById("orszag");
+            if(cucc){
+                cucc.style.borderColor="BLACK";
+            }
+            x.style.color="RED";
+            x.textContent = null;
+        }
+    }
+
+    let city=(document.getElementById("varos") as HTMLInputElement).value;
+    console.log(varos.test(city));
+    if(varos.test(city)==false){
+        let x = document.getElementById("isvalid"); 
+        if (x){
+            let cucc=document.getElementById("varos");
+            if(cucc){
+                cucc.style.borderColor="RED";
+            }
+            x.style.color="RED";
+            x.textContent = "Nem jól töltötte ki";
+        }
+    }
+    else{
+        let x = document.getElementById("isvalid"); 
+        if (x){
+            let cucc=document.getElementById("varos");
+            if(cucc){
+                cucc.style.borderColor="BLACK";
+            }
+            x.style.color="RED";
+            x.textContent = null;
+        }
+    }
+
+    let street=(document.getElementById("utca") as HTMLInputElement).value;
+    console.log(utca.test(street));
+    if(utca.test(street)==false){
+        let x = document.getElementById("isvalid"); 
+        if (x){
+            let cucc=document.getElementById("utca");
+            if(cucc){
+                cucc.style.borderColor="RED";
+            }
+            x.style.color="RED";
+            x.textContent = "Nem jól töltötte ki";
+        }
+    }
+    else{
+        let x = document.getElementById("isvalid"); 
+        if (x){
+            let cucc=document.getElementById("utca");
+            if(cucc){
+                cucc.style.borderColor="BLACK";
+            }
+            x.style.color="RED";
+            x.textContent = null;
+        }
+    
+    }
+    let irsz=(document.getElementById("iranyitoszam") as HTMLInputElement).value;
+    console.log(iranyitoSzam.test(irsz));
+    if(iranyitoSzam.test(irsz)==false){
+        let x = document.getElementById("isvalid"); 
+        if (x){
+            let cucc=document.getElementById("iranyitoszam");
+            if(cucc){
+                cucc.style.borderColor="RED";
+            }
+            x.style.color="RED";
+            x.textContent = "Nem jól töltötte ki";
+        }
+    }
+    else{
+        let x = document.getElementById("isvalid"); 
+        if (x){
+            let cucc=document.getElementById("iranyitoszam");
+            if(cucc){
+                cucc.style.borderColor="BLACK";
+            }
+            x.style.color="RED";
+            x.textContent = null;
+        }
+    }
+    let code=(document.getElementById("ellenorzokod") as HTMLInputElement).value;
+    console.log(ellenorzoKod.test(code));
+    if(ellenorzoKod.test(code)==false){
+        let x = document.getElementById("isvalid"); 
+        if (x){
+            let cucc=document.getElementById("ellenorzokod");
+            if(cucc){
+                cucc.style.borderColor="RED";
+            }
+            x.style.color="RED";
+            x.textContent = "Nem jól töltötte ki";
+        }
+    }
+    else{
+        let x = document.getElementById("isvalid"); 
+        if (x){
+            let cucc=document.getElementById("ellenorzokod");
+            if(cucc){
+                cucc.style.borderColor="BLACK";
+            }
+            x.style.color="RED";
+            x.textContent = null;
+        }
+    }
+
+    let name=(document.getElementById("kartyanev") as HTMLInputElement).value;
+    console.log(bankkartyaraIrtNev.test(name));
+    if(bankkartyaraIrtNev.test(name)==false){
+        let x = document.getElementById("isvalid"); 
+        if (x){
+            let cucc=document.getElementById("kartyanev");
+            if(cucc){
+                cucc.style.borderColor="RED";
+            }
+            x.style.color="RED";
+            x.textContent = "Nem jól töltötte ki";
+        }
+    }
+    else{
+        let x = document.getElementById("isvalid"); 
+        if (x){
+            let cucc=document.getElementById("kartyanev");
+            if(cucc){
+                cucc.style.borderColor="BLACK";
+            }
+            x.style.color="RED";
+            x.textContent = null;
+        }
+    }
+    if(document.getElementById("isvalid")?.textContent==null){
+        window.alert("Nem jó");
+        console.log(":(")
+    }
 })
